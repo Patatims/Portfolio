@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+nav{
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  padding: 0px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  padding-top: 1px;
+  width: 150px;
+  cursor: pointer;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+  margin: 10px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 1px 2px 0.5px rgba(0,0,0,0.2);
+  text-decoration: none;
+  color: black;
+}
+nav ul li a:hover{
+  color:red;
+
+}
+
+.btn{
+  background-color: red;
+  border-radius: 4px;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+   
+}
+
+.btn:hover{
+  background: transparent;
+  color: red;
+  background: 1px solid red;
+
+}
+
+.info p{
+  line-height: 0px;
+  margin: 45px 0px 25px;
+}
+.info {
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%,-42%);
+}
+
+.info p:nth-child(1){
+ font-size: 28px;
+ font-weight: bold;
+ color: #6d6d6d;
+
+}
+.info p:nth-child(2){
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #444242;
+}
+
+.info p span{
+  color: red;
+} 
+.info p:nth-child(3){
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #444242;
+}
+.info p:nth-child(4){
+  color: #606163;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.img-box{
+  padding-top: 60px;
+  width: 55%;
+  height: 80%;
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+}
+
+.img-box img{
+  height: 620px;
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img{
+  bottom: 130px;
+}
+.man-img{
+  -webkit-filter: drop-shadow(5px 5px 5px #666666);
+        filter: drop-shadow( 1.5px 0px 1px black);
+  transition: all 2.4s ease;
+}
+.img-box:hover .man-img{
+  background: transparent;
+  left: 54%;
+  -webkit-filter: drop-shadow(5px 5px 5px #666666);
+        filter: drop-shadow(-18px -15px 13px black);
+        transition: all 0.9s ease-in-out;
+}
+
+.social{
+  margin-left: 2%;
+  margin-top: 10px;
+}
+
+.social a{
+  font-size: 28px;
+  color: #606163;
+  margin-right: 35px;
+}
+
+.social a:hover{
+  color:red
+}
+.about-container{
+  width: 98%;
+  height: 330px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  display: flex;
+  margin:-7% auto 20px auto ;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-container img{
+  height: 305px;
+  border-radius: 50px 10px;
+  border: 10px black solid;
+}
+.pf-text{
+  font-family: 'Poppins', sans-serif;
+  width: 1550px;
+}
+.pf-text p:nth-child(1){
+  color:#403e3e;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 0px;
+  letter-spacing: 1px;
+}
+.pf-text p:nth-child(2){
+  color: #3e3d3d;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 60px;
+}
+.pf-text p:nth-child(3){
+  color: #7e7d7d;
+  font-size: 22px;
+  line-height: 30px;
+} 
+.pf-text p:nth-child(4){
+  color: #7e7d7d;
+  font-size: 20px;
+  line-height: 70px;
+}
+.pf-text p:nth-child(5){
+  color: #7e7d7d;
+  font-size: 20px;
+  line-height: 30px;
+}
+.pf-text a{
+  font-size: 40px;
+  color: red;
+  display: text;
+  margin: 0px 5px;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+.pf-text a:hover{
+  background: transparent;
+  color: black;
+  background: 1px solid red;
+}
+.pf-text a:active .fa-facebook{
+  color: white;
+}
+.pf-text a:visited .fa-facebook{
+  color: blue;
+}
+.pf-text a:active .fa-discord{
+  color: white;
+}
+.pf-text a:visited .fa-discord{
+  color: purple;
+}
+ footer{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.copyright{
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  color:#565555;
+  font-weight: bold;
+  font-size: 15px;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
